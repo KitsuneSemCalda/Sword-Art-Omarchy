@@ -5,10 +5,6 @@ Online — the black leather-and-steel look of Aincrad's system windows:
 carbon-black backgrounds textured like a woven coat, with the bright
 cyan-blue "Link Start" glow burning through the dark.
 
-|                          |                          |
-|--------------------------|--------------------------|
-| ![desktop](preview.png)  | ![lock screen](preview-unlock.png) |
-
 ## Install
 
 ```bash
