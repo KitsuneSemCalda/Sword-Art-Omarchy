@@ -57,11 +57,26 @@ No glow at all — pure carbon.
 </tr>
 </table>
 
-`backgrounds/omarchy.png` is the wordmark wallpaper used by the theme
-switcher, and `unlock.png` is the small logo mark shown on the lock
-screen — both share the same carbon/cyan treatment.
+`backgrounds/omarchy.png` is the wordmark wallpaper included in the theme's
+background rotation, and `unlock.png` is the small logo mark shown on the
+Plymouth unlock screen — both share the same carbon/cyan treatment.
+
+`preview.png` and `preview-unlock.png` are compact selector previews derived
+from the same artwork. They keep the theme visible in both the main Omarchy
+theme picker and the Plymouth unlock-screen picker without loading the full
+4K wallpapers.
 
 ![omarchy wordmark](backgrounds/omarchy.png)
 
 All backgrounds and UI marks are original, generated artwork — no frames or
 art from the anime were used.
+
+## Development
+
+Run the package checks locally with ImageMagick installed:
+
+```bash
+bash tests/validate-theme.sh
+```
+
+GitHub Actions runs the same validation on every push and pull request.
