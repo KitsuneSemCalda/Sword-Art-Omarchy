@@ -59,6 +59,7 @@ required_files=(
   README.md
   LICENSE
   colors.toml
+  shell.toml
   icons.theme
   unlock.png
   preview.png
