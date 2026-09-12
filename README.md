@@ -5,6 +5,22 @@ Online — the black leather-and-steel look of Aincrad's system windows:
 carbon-black backgrounds textured like a woven coat, with the bright
 cyan-blue "Link Start" glow burning through the dark.
 
+## System interface
+
+`shell.toml` adds an Aincrad-inspired interface to Omarchy versions with
+support for shell surface themes:
+
+- Pale, translucent notification cards and tooltips with dark text.
+- Thin borders with a stronger left edge on menus, launcher, and popups.
+- Cyan hover, keyboard focus, and selection treatments on dark controls.
+- An HP-inspired green notification lifetime indicator; critical alerts
+  retain their red urgency color.
+
+The terminal palette and carbon wallpapers stay dark. The previews below
+show the wallpaper artwork, not a screenshot of these shell surfaces.
+Shell geometry follows Omarchy's components; this theme does not add custom
+HUD widgets or change window-manager settings.
+
 ## Install
 
 ```bash
