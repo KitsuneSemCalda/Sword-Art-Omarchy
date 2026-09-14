@@ -1,6 +1,10 @@
 # Compiled Lua sources
 luac.out
 
+# Python validation cache
+__pycache__/
+*.pyc
+
 # luarocks build files
 *.src.rock
 *.zip
@@ -38,4 +42,3 @@ luac.out
 *.i*86
 *.x86_64
 *.hex
-
