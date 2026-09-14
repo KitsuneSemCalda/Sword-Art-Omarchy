@@ -54,6 +54,7 @@ check_png() {
 
 require_command identify
 require_command stat
+require_command python3
 
 required_files=(
   README.md
@@ -98,6 +99,9 @@ for key in "${required_colors[@]}"; do
   fi
 done
 pass "colors.toml contains the complete dark semantic palette"
+
+python3 tests/validate-config.py
+pass "TOML syntax and shell surface values are valid"
 
 icon_theme=$(sed -n '/[^[:space:]]/p' icons.theme | head -n 1)
 [[ "$icon_theme" =~ ^[[:alnum:]_.+-]+$ ]] || fail "icons.theme contains an invalid icon theme name"
