@@ -46,7 +46,8 @@ The shell tokens were checked against the installed **4.0.3-1** source;
 that is the compatibility reference, not a claim that every earlier 4.x
 release was tested. Omarchy 3 and older are not supported by this package.
 See the [upstream Quattro overview](https://github.com/omacom/omarchy/pull/6231)
-for the shell transition.
+for the shell transition, and [COMPATIBILITY.md](COMPATIBILITY.md) for
+which Omarchy versions have actually been checked.
 
 Check your installed version with `omarchy version`, then install:
 
@@ -117,6 +118,17 @@ theme picker and the Plymouth unlock-screen picker without loading the full
 
 All backgrounds and UI marks are original, generated artwork — no frames or
 art from the anime were used.
+
+## Fan project
+
+Sword Art Omarchy is an unofficial, non-commercial fan project. It is not
+affiliated with, endorsed by, or produced in association with Reki
+Kawahara, ASCII Media Works, A-1 Pictures, Aniplex, or any other rights
+holder of the *Sword Art Online* franchise. "Sword Art Online," "Aincrad,"
+and related names and marks are trademarks of their respective owners,
+used here only to describe the visual inspiration for this theme. This
+repository distributes only original artwork and configuration files, and
+grants no rights to any *Sword Art Online* trademark or copyrighted asset.
 
 ## Development
 
