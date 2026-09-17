@@ -6,7 +6,7 @@ Omarchy 3 and older use a different shell stack and are not supported.
 | Omarchy version | Status | Notes |
 |---|---|---|
 | 4.0.3-1 | Tested | Reference version for `shell.toml`; interface screenshots in the README were captured here. |
-| 4.0.4-1 | Verified compatible | `tests/validate-config.py`'s schema still matches the installed `Commons/{Color,Style,Border}.qml` source. Omarchy added optional `[polkit]`, `[lock]`, and `[image-picker]` surface tokens since 4.0.3 that this theme does not yet set — Omarchy's own defaults apply there, so nothing breaks, but those surfaces don't get the theme's carbon/cyan treatment. |
+| 4.0.4-1 | Tested | `tests/validate-config.py`'s schema matches the installed `Commons/{Color,Style,Border}.qml` source. This theme now also sets the `[polkit]`, `[lock]`, and `[image-picker]` surface tokens Omarchy added since 4.0.3, giving those surfaces the carbon/cyan treatment too. |
 | 4.1.x | Not tested | No access to a 4.1 install to verify against. |
 | 4.2.x and newer | Not tested | |
 

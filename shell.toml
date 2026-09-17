@@ -72,3 +72,41 @@ selected-background-alpha = 0.12
 selected-text = "#7dfaff"
 selected-border = "#3ee8ff"
 selected-border-alpha = 0.8
+
+# Elevated auth prompt: cyan border and accent match the menu's focus
+# treatment; the error state falls back to the same HP red as [bar] active.
+[polkit]
+background = "#16181b"
+background-alpha = 0.96
+text = "#e9f2f5"
+text-error = "#ff3b5c"
+border = "#3ee8ff"
+border-alpha = 0.7
+border-error = "#ff3b5c"
+accent = "#3ee8ff"
+scrim = "#030304"
+scrim-alpha = 0.55
+
+# Idle border stays pale; typing (border-active) switches to cyan like a
+# focused control, and a bad password turns it red.
+[lock]
+background = "#030304"
+background-alpha = 0.85
+text = "#e9f2f5"
+placeholder = "#717a86"
+text-error = "#ff3b5c"
+border = "#c3d6dd"
+border-alpha = 0.5
+border-active = "#3ee8ff"
+border-error = "#ff3b5c"
+selection = "#3ee8ff"
+selection-alpha = 0.45
+
+[image-picker]
+scrim = "#030304"
+scrim-alpha = 0.55
+text = "#e9f2f5"
+selected-border = "#3ee8ff"
+selected-border-alpha = 0.85
+unselected-border = "#c3d6dd"
+unselected-border-alpha = 0.28

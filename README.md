@@ -15,6 +15,8 @@ support for shell surface themes:
 - Cyan hover, keyboard focus, and selection treatments on dark controls.
 - An HP-inspired green notification lifetime indicator; critical alerts
   retain their red urgency color.
+- The polkit auth prompt, lock screen, and background/theme picker also
+  carry the carbon/cyan treatment, with the same HP-red error state.
 
 The terminal palette and carbon wallpapers stay dark. The interface screenshots below show the applied theme; the background
 previews in the Backgrounds section show wallpaper artwork.

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Validate this theme's supported subset of Omarchy 4 shell tokens.
 
-Reference: Omarchy 4.0.3-1 Commons/{Color,Style,Border}.qml.
+Reference: Omarchy 4.0.4-1 Commons/{Color,Style,Border}.qml.
 This is a package contract, not a complete Omarchy schema. Extend it when
 intentionally adding supported tokens; unknown keys otherwise hide typos.
 """
@@ -34,6 +34,21 @@ SCHEMA = {
     "notifications": SURFACE | {"countdown"},
     "tooltip": SURFACE,
     "menu": MENU,
+    # polkit/lock share one border-alpha across border/border-active/border-error
+    # (three mutually exclusive states), so there is no per-state -alpha key.
+    "polkit": {
+        "background", "background-alpha", "text", "text-error", "border",
+        "border-error", "border-alpha", "accent", "scrim", "scrim-alpha",
+    },
+    "lock": {
+        "background", "background-alpha", "text", "placeholder", "text-error",
+        "border", "border-active", "border-error", "border-alpha",
+        "selection", "selection-alpha",
+    },
+    "image-picker": {
+        "scrim", "scrim-alpha", "text", "selected-border",
+        "selected-border-alpha", "unselected-border", "unselected-border-alpha",
+    },
 }
 
 
@@ -71,6 +86,10 @@ SHELL_TEXT_PAIRS = [
     (("notifications", "text"), ("notifications", "background")),
     (("tooltip", "text"), ("tooltip", "background")),
     (("menu", "text"), ("menu", "background")),
+    (("polkit", "text"), ("polkit", "background")),
+    (("polkit", "text-error"), ("polkit", "background")),
+    (("lock", "text"), ("lock", "background")),
+    (("lock", "text-error"), ("lock", "background")),
 ]
 
 
