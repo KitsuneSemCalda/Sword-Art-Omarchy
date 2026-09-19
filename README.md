@@ -29,6 +29,11 @@ Captured on Omarchy **4.0.3-1**, at **1920×1080**, with the repository's
 `shell.toml` applied. The local shell override sets `[font] base-size = 14`;
 bar layout and installed applications reflect the capture machine.
 
+![Overview: bar, menu, launcher and notification over the theme wallpaper](docs/screenshots/overview.png)
+
+The overview above is a composite: real crops of the bar, menu, launcher, and
+notification from the captures below, placed over the theme wallpaper.
+
 | Desktop and bar | Main menu |
 |---|---|
 | ![Desktop and bar](docs/screenshots/desktop.png) | ![Main menu with cyan selection](docs/screenshots/menu.png) |
@@ -54,7 +59,7 @@ which Omarchy versions have actually been checked.
 Check your installed version with `omarchy version`, then install:
 
 ```bash
-omarchy theme install https://github.com/KitsuneSemCalda/Sword-Art-Omarchy
+omarchy theme install https://github.com/KitsuneSemCalda/omarchy-sword-art-theme
 omarchy theme set "Sword Art Omarchy"
 ```
 
